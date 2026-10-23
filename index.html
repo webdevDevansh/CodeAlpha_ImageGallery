@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Image Gallery</h1>
+        <p>Explore beautiful moments around the world</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Category Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">
+                All
+            </button>
+            <button class="filter-btn" data-category="nature">
+                Nature
+            </button>
+            <button class="filter-btn" data-category="city">
+                City
+            </button>
+            <button class="filter-btn" data-category="animals">
+                Animals
+            </button>
+        </div>
+
+        <!-- Gallery -->
+        <div class="gallery">
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+                    alt="Beautiful mountain lake" loading="lazy">
+                <div class="image-info">
+                    <h3>Mountain Lake</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800" alt="City skyline"
+                    loading="lazy">
+                <div class="image-info">
+                    <h3>City Lights</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800" alt="Lion in the wild"
+                    loading="lazy">
+                <div class="image-info">
+                    <h3>Wild Lion</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800" alt="Green forest"
+                    loading="lazy">
+                <div class="image-info">
+                    <h3>Green Forest</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800" alt="Modern architecture"
+                    loading="lazy">
+                <div class="image-info">
+                    <h3>Architecture</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800" alt="Dog outdoors"
+                    loading="lazy">
+                <div class="image-info">
+                    <h3>Lovely Dog</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                    alt="Beautiful natural landscape" loading="lazy">
+                <div class="image-info">
+                    <h3>Open Landscape</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800" alt="City buildings at night"
+                    loading="lazy">
+                <div class="image-info">
+                    <h3>Night City</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=800" alt="Wild animal"
+                    loading="lazy">
+                <div class="image-info">
+                    <h3>Wildlife</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="close-btn" id="closeBtn" aria-label="Close image">&times;</button>
+
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous image">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="imageCounter"></p>
+            </div>
+        </div>
+
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>Designed with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
